@@ -22,6 +22,11 @@ jobs:
           - os-version: ubuntu-20.04
             python-version: '3.8.10'
             cuda-version: '11.6.0'
+            torch-install-command: 'torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116'
+          
+          - os-version: ubuntu-20.04
+            python-version: '3.8.10'
+            cuda-version: '11.6.0'
             torch-install-command: '--pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cu116'
             
     steps:
